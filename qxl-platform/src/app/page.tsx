@@ -22,42 +22,6 @@ export default function Home() {
 
   const slides = [
     {
-      imageOnly: true,
-      image: "/image/food_intolerance_banner.png",
-      bgFrom: "#ffffff",
-      bgTo: "#ffffff",
-      title: "Food Intolerance",
-      badge: "NEW",
-      titleAccent: "",
-      subtitle: "",
-      subtitleAccent: "",
-      description: "",
-      cta: "",
-      ctaLink: "",
-      ctaSecondary: "",
-      ctaSecondaryLink: "",
-      imageFit: "cover",
-      features: []
-    },
-    {
-      imageOnly: true,
-      image: "/image/franchise_banner.png",
-      bgFrom: "#ffffff",
-      bgTo: "#ffffff",
-      title: "Franchise",
-      badge: "NEW",
-      titleAccent: "",
-      subtitle: "",
-      subtitleAccent: "",
-      description: "",
-      cta: "",
-      ctaLink: "",
-      ctaSecondary: "",
-      ctaSecondaryLink: "",
-      imageFit: "cover",
-      features: []
-    },
-    {
       badge: "LEADER IN DIAGNOSTICS",
       title: "BENGALURU'S MOST ADVANCED",
       titleAccent: "CERTIFIED DIAGNOSTICS LAB",
@@ -296,6 +260,32 @@ export default function Home() {
             className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/80 shadow-md border border-gray-100 flex items-center justify-center text-slate-700 hover:bg-white hover:text-[#2563eb] transition-all z-20 opacity-0 group-hover:opacity-100">
             <ChevronRight className="w-5 h-5" />
           </button>
+        </section>
+
+        {/* ── Side-by-Side Banners ── */}
+        <section className="pb-6">
+          <div className="max-w-[1260px] mx-auto px-4 w-full">
+            <div className="grid grid-cols-2 gap-6">
+              <div className="relative rounded-[28px] overflow-hidden aspect-[1024/348] shadow-md hover:shadow-lg transition-all transform hover:scale-[1.01] duration-300">
+                <Image
+                  src="/image/food_intolerance_banner.png"
+                  alt="Food Intolerance Banner"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+              <div className="relative rounded-[28px] overflow-hidden aspect-[1024/348] shadow-md hover:shadow-lg transition-all transform hover:scale-[1.01] duration-300">
+                <Image
+                  src="/image/franchise_banner.png"
+                  alt="Franchise Banner"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* ── Action Cards ── */}
